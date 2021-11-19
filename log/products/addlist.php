@@ -50,7 +50,7 @@
                     <div class="form-group">
                         <label for="exampleInputEmail1"></label>
 
-                        <input type="number" class="form-control" name="price" placeholder="precio" required>
+                        <input type="float" class="form-control" name="price" placeholder="precio" required>
                     </div>
 
 

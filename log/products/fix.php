@@ -46,7 +46,7 @@ $query = mysqli_query($con, $sql_fetch_todos);
             <div class="form-group">
                 <label for="exampleInputEmail1">Precio : </label>
                 <br>
-                <input type="number" class="form-control" name="price" value="<?php echo $_GET['price']; ?>" required>
+                <input type="float" class="form-control" name="price" value="<?php echo $_GET['price']; ?>" required>
             </div>
             <div class="form-group">
                 <label for="exampleInputEmail1">image : </label>

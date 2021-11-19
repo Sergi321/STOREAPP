@@ -85,12 +85,19 @@
                     <div class="box_product_text">
                         <p class="preoduct_text"><b><?php
 
-                                                    $sql = "SELECT proname, price,image FROM product where id=19";
+                                                    $sql = "SELECT proname, price,image,id FROM product where id=19";
                                                     $result = $con->query($sql);
+                                              
                                                     if ($row = $result->fetch_assoc()) {
+                                                        $id=$row["id"];
                                                         echo  $row["proname"] . ": " . $row["price"] . "€";
                                                         echo "<br><img class='img_pr'src=" . $row["image"] . ">";
-                                                    } ?></b></p>
+                                                    } ?></b>
+                        <form method="POST" action="../products/product_dec.php">
+                            <input type="hidden" value="<?php echo $id; ?>" name="id" />
+                            <input type="submit" value="Submit" />
+                        </form>
+                        </p>
 
                     </div>
                 </div>
@@ -98,12 +105,19 @@
                     <div class="box_product_text">
                         <p class="preoduct_text"><b><?php
 
-                                                    $sql = "SELECT proname, price,image FROM product where id=14";
+                                                    $sql = "SELECT proname, price,image,id FROM product where id=14";
                                                     $result = $con->query($sql);
+                                              
                                                     if ($row = $result->fetch_assoc()) {
+                                                        $id=$row["id"];
                                                         echo  $row["proname"] . ": " . $row["price"] . "€";
                                                         echo "<br><img class='img_pr'src=" . $row["image"] . ">";
-                                                    } ?></b></p>
+                                                    } ?></b>
+                        <form method="POST" action="../products/product_dec.php">
+                            <input type="hidden" value="<?php echo $id; ?>" name="id" />
+                            <input type="submit" value="Submit" />
+                        </form>
+                        </p>
 
                     </div>
                 </div>
@@ -112,12 +126,19 @@
                     <div class="box_product_text">
                         <p class="preoduct_text"><b><?php
 
-                                                    $sql = "SELECT proname, price,image FROM product where id=20";
+                                                    $sql = "SELECT proname, price,image,id FROM product where id=20";
                                                     $result = $con->query($sql);
+                                              
                                                     if ($row = $result->fetch_assoc()) {
+                                                        $id=$row["id"];
                                                         echo  $row["proname"] . ": " . $row["price"] . "€";
                                                         echo "<br><img class='img_pr'src=" . $row["image"] . ">";
-                                                    } ?></b></p>
+                                                    } ?></b>
+                        <form method="POST" action="../products/product_dec.php">
+                            <input type="hidden" value="<?php echo $id; ?>" name="id" />
+                            <input type="submit" value="Submit" />
+                        </form>
+                        </p>
 
                     </div>
                 </div>
@@ -131,16 +152,23 @@
 
 
             <div class="contenedor_row">
-                <div class="box_product">
+            <div class="box_product">
                     <div class="box_product_text">
                         <p class="preoduct_text"><b><?php
 
-                                                    $sql = "SELECT proname, price,image FROM product where id=11";
+                                                    $sql = "SELECT proname, price,image,id FROM product where id=11";
                                                     $result = $con->query($sql);
+                                              
                                                     if ($row = $result->fetch_assoc()) {
+                                                        $id=$row["id"];
                                                         echo  $row["proname"] . ": " . $row["price"] . "€";
                                                         echo "<br><img class='img_pr'src=" . $row["image"] . ">";
-                                                    } ?></b></p>
+                                                    } ?></b>
+                        <form method="POST" action="../products/product_dec.php">
+                            <input type="hidden" value="<?php echo $id; ?>" name="id" />
+                            <input type="submit" value="Submit" />
+                        </form>
+                        </p>
 
                     </div>
                 </div>
@@ -148,12 +176,19 @@
                     <div class="box_product_text">
                         <p class="preoduct_text"><b><?php
 
-                                                    $sql = "SELECT proname, price,image FROM product where id=11";
+                                                    $sql = "SELECT proname, price,image,id FROM product where id=11";
                                                     $result = $con->query($sql);
+                                              
                                                     if ($row = $result->fetch_assoc()) {
+                                                        $id=$row["id"];
                                                         echo  $row["proname"] . ": " . $row["price"] . "€";
                                                         echo "<br><img class='img_pr'src=" . $row["image"] . ">";
-                                                    } ?></b></p>
+                                                    } ?></b>
+                        <form method="POST" action="../products/product_dec.php">
+                            <input type="hidden" value="<?php echo $id; ?>" name="id" />
+                            <input type="submit" value="Submit" />
+                        </form>
+                        </p>
 
                     </div>
                 </div>
@@ -161,12 +196,19 @@
                     <div class="box_product_text">
                         <p class="preoduct_text"><b><?php
 
-                                                    $sql = "SELECT proname, price,image FROM product where id=11";
+                                                    $sql = "SELECT proname, price,image,id FROM product where id=11";
                                                     $result = $con->query($sql);
+                                              
                                                     if ($row = $result->fetch_assoc()) {
+                                                        $id=$row["id"];
                                                         echo  $row["proname"] . ": " . $row["price"] . "€";
                                                         echo "<br><img class='img_pr'src=" . $row["image"] . ">";
-                                                    } ?></b></p>
+                                                    } ?></b>
+                        <form method="POST" action="../products/product_dec.php">
+                            <input type="hidden" value="<?php echo $id; ?>" name="id" />
+                            <input type="submit" value="Submit" />
+                        </form>
+                        </p>
 
                     </div>
                 </div>
