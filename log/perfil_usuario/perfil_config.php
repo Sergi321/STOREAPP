@@ -36,17 +36,17 @@
 
             ?>
 
-            <p class="title"><b><?php echo $username; ?> | MI PERFIL</b></p>
+            <p class="title"><b><?php echo $username; ?> | CONFIGURACIÓN USUARIO</b></p>
             <form class="formulario" method="POST" enctype="multipart/form-data" action="controlador/editar_perfil.php">
                 <div class="container_boxes">
 
-                    <div class="info">
-                     
-                        <div class="user">
-                        Usuario: <?php echo $user; ?>
-                        </div>
-                        <div class="email">
-                        Correo: <?php echo $email; ?>
+                    <div class="inputs">
+                        <input type="text" name="username" value="<?php echo $user; ?>" required>
+                        <input type="hidden" value="<?php echo $id; ?>" name="id" />
+                        <input type="text" name="email" value="<?php echo $email; ?>" required>
+                        <input type="text" name="password" placeholder="password" required>
+                        <div class="subir_archivo">
+                            <input type="file" name="img_up">
                         </div>
                     </div>
 
@@ -59,7 +59,7 @@
                 </div>
 
                 <div class="container_buttons">
-                    <button class="button" onclick="window.location.href='../perfil_config.php';"> Editar Perfil</button>
+                    <button class="button"> Guardar Cambios</button>
                     <button class="button" onclick="window.location.href='../view/userview.php';"> Volver al menú</button>
                 </div>
             </form>

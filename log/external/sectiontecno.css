@@ -155,3 +155,18 @@ width: 40%;
   align-self: center;
   padding-left: 10px;
 }
+input[type=submit] {
+  flex: 1; /* additionally, equal width */
+  
+  padding: 1em;
+}
+
+input[type=submit] {
+  border: 3px  rgb(0, 0, 0);
+  background-color: rgb(71, 136, 189);
+  border-radius: 5px;
+width: 50%;
+color: white;
+padding: 8px;
+
+}
